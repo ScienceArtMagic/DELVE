@@ -105,7 +105,7 @@ Significant research has explored bias and fairness issues with language models 
 
 <!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
 
-
+Don't be a douche (generally good advice anyway).
 
 
 

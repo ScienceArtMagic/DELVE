@@ -1,10 +1,9 @@
 ---
-license: 
+license:
 - apache-2.0
 - mit
 language:
 - en
-- de
 library_name: transformers
 pipeline_tag: text-generation
 tags:

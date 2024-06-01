@@ -1,7 +1,10 @@
 ---
-license: apache-2.0
+license: 
+- apache-2.0
+- mit
 language:
 - en
+- de
 library_name: transformers
 pipeline_tag: text-generation
 tags:
@@ -56,10 +59,10 @@ tags:
 <!-- Provide a longer summary of what this model is/does. -->
 
 
-- **Developed by:** ScienceArtMagic
+- **Developed by:** 🧪Science🖌️Art🪄Magic
 - **Model type:** Language model
 - **Language(s) (NLP):** en
-- **License:** MIT or apache-2.0 (your choice)
+- **License:** MIT or Apache 2.0 (your choice)
 - **Parent Model:** Mamba/Jamba, RWKV, Pythia, OpenLM
 - **Resources for more information:** More information needed
 

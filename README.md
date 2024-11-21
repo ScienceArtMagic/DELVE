@@ -3,7 +3,7 @@ license:
 - apache-2.0
 - mit
 language:
-- en
+- multilingual
 library_name: transformers
 pipeline_tag: text-generation
 tags:
@@ -86,11 +86,11 @@ base_model:
 <!-- Provide a longer summary of what this model is/does. -->
 
 
-- **Developed by:** 🧪Science🖌️Art🪄Magic
+- **Developed by:** 🧪🖌️🪄
 - **Model type:** Language model
 - **Language(s) (NLP):** en
 - **License:** MIT or Apache 2.0 (your choice)
-- **Parent Model:** Mamba/Jamba, RWKV, Pythia, OpenLM (Supra/Linear OpenLM)
+- **Parent Model:** Mamba v1, RWKV v4, Pythia, OpenLM
 - **Resources for more information:** More information needed
 
 
@@ -112,7 +112,7 @@ base_model:
 <!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
 <!-- If the user enters content, print that. If not, but they enter a task in the list, use that. If neither, say "more info needed." -->
 
-If you're fine-tuning with e.g. LoRA, note that the linear and convolution modules from Mamba/Jamba/Zamba, RWKV v4, Pythia, and OpenLM/Supra have already been approximated as low-rank, parameterized hypercomplex submodules (the biggest... well, factor in making DELVE so smol).
+If you're fine-tuning with e.g. LoRA, note that the linear and convolution modules from Mamba, RWKV v4, Pythia, and OpenLM/Supra have already been approximated as low-rank, parameterized hypercomplex submodules (the biggest... well, factor in making DELVE so small).
 
 ### Out-of-Scope Use
 
@@ -131,7 +131,7 @@ Significant research has explored bias and fairness issues with language models 
 
 <!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
 
-Don't be a douche (generally good advice anyway).
+Hopefully the model won't be a douche... It is trained on the internet though, so...
 
 ## Training Details
 
@@ -191,7 +191,9 @@ More information needed
 
 ### Model Architecture and Objective
 
-More information needed
+Autoregressive hybrid of Mamba v1 SSM, RWKV v4 RNN, and two decoder-only Transformer architectures (Pythia and OpenLM) - all based on the GPT-NeoX 20b tokenizer.
+
+Combined single model upcycled from these individual pretrained models, after each goes through SVD low-rank approximation for extreme parameter reduction.
 
 ### Compute Infrastructure
 
@@ -238,6 +240,7 @@ More information needed
 More information needed
 
 [@stereoplegic](https://huggingface.co/stereoplegic)
+[🦋 ScienceArtMagic](https://ScienceArtMagic.bsky.social)
 
 ## How to Get Started with the Model
 

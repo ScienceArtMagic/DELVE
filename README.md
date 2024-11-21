@@ -237,10 +237,7 @@ More information needed
 
 ## Model Card Contact
 
-More information needed
-
 [🤗 stereoplegic](https://huggingface.co/stereoplegic)
-
 [🦋 ScienceArtMagic](https://ScienceArtMagic.bsky.social)
 
 ## How to Get Started with the Model

@@ -239,7 +239,8 @@ More information needed
 
 More information needed
 
-[@stereoplegic](https://huggingface.co/stereoplegic)
+[🤗 stereoplegic](https://huggingface.co/stereoplegic)
+
 [🦋 ScienceArtMagic](https://ScienceArtMagic.bsky.social)
 
 ## How to Get Started with the Model

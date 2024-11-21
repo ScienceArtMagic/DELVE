@@ -12,6 +12,34 @@ tags:
 - rwkv
 - openlm
 - supra
+datasets:
+- EleutherAI/pile
+- cerebras/SlimPajama-627B
+- oscar-corpus/oscar
+- togethercomputer/RedPajama-Data-V2
+- tiiuae/falcon-refinedweb
+- bigcode/the-stack-dedup
+- bigcode/the-stack-v2-dedup
+- OpenCoder-LLM/fineweb-code-corpus
+- codeparrot/github-code-clean
+- opencsg/chinese-fineweb-edu
+- opencsg/chinese-fineweb-edu-v2
+- HuggingFaceFW/fineweb
+- HuggingFaceFW/fineweb-edu
+- OpenCoder-LLM/fineweb-math-corpus
+- allenai/dolma
+base_model:
+- state-spaces/mamba-370m-hf
+- state-spaces/mamba-1.4b-hf
+- TRI-ML/mamba-7b-rw
+- RWKV/rwkv-4-430m-pile
+- RWKV/rwkv-4-1b5-pile
+- RWKV/rwkv-4-7b-pile
+- TRI-ML/openlm-7b-code
+- EleutherAI/pythia-410m-deduped
+- EleutherAI/pythia-1b-deduped
+- EleutherAI/pythia-1.4b-deduped
+- EleutherAI/pythia-6.9b-deduped
 ---
 
 # DELVE: Diminutive Experts Leverage Voluminous Expansion

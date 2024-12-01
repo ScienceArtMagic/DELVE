@@ -1,7 +1,6 @@
 ---
 license:
 - apache-2.0
-- mit
 language:
 - multilingual
 library_name: transformers
@@ -10,8 +9,8 @@ tags:
 - mamba
 - pythia
 - rwkv
-- openlm
-- supra
+#- openlm
+#- supra
 datasets:
 - EleutherAI/pile
 - cerebras/SlimPajama-627B
@@ -88,8 +87,8 @@ base_model:
 
 - **Developed by:** 🧪🖌️🪄
 - **Model type:** Language model
-- **Language(s) (NLP):** mul
-- **License:** MIT or Apache 2.0 (your choice)
+- **Language(s) (NLP):** Multilingual
+- **License:** Apache 2.0
 - **Parent Model:** Mamba v1, RWKV v4, Pythia, OpenLM
 - **Resources for more information:** More information needed
 

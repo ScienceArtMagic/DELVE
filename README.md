@@ -89,7 +89,7 @@ base_model:
 - **Model type:** Language model
 - **Language(s) (NLP):** Multilingual
 - **License:** Apache 2.0
-- **Parent Model:** Mamba v1, RWKV v4, Pythia, OpenLM
+- **Parent Model:** Mamba v1, RWKV v4, Pythia
 - **Resources for more information:** More information needed
 
 

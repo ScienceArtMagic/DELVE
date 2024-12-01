@@ -9,8 +9,6 @@ tags:
 - mamba
 - pythia
 - rwkv
-#- openlm
-#- supra
 datasets:
 - EleutherAI/pile
 - cerebras/SlimPajama-627B
@@ -34,11 +32,11 @@ base_model:
 - RWKV/rwkv-4-430m-pile
 - RWKV/rwkv-4-1b5-pile
 - RWKV/rwkv-4-7b-pile
-# - TRI-ML/openlm-7b-code
 - EleutherAI/pythia-410m-deduped
 - EleutherAI/pythia-1b-deduped
 - EleutherAI/pythia-1.4b-deduped
 - EleutherAI/pythia-6.9b-deduped
+- togethercomputer/RedPajama-INCITE-7B-Base
 ---
 
 # DELVE: Diminutive Experts Leverage Voluminous Expansion
@@ -89,7 +87,7 @@ base_model:
 - **Model type:** Language model
 - **Language(s) (NLP):** Multilingual
 - **License:** Apache 2.0
-- **Parent Model:** Mamba v1, RWKV v4, Pythia
+- **Parent Model:** Mamba v1, RWKV v4, Pythia, RedPajama INCITE
 - **Resources for more information:** More information needed
 
 
@@ -190,7 +188,7 @@ More information needed
 
 ### Model Architecture and Objective
 
-Autoregressive hybrid of Mamba v1 SSM, RWKV v4 RNN, and two decoder-only Transformer architectures (Pythia and OpenLM) - all based on the GPT-NeoX 20b tokenizer.
+Autoregressive hybrid of Mamba v1 SSM, RWKV v4 RNN, and two decoder-only Transformer architectures (Pythia and RedPajama Incite) - all based on the GPT-NeoX 20b tokenizer.
 
 Combined single model upcycled from these individual pretrained models, after each goes through SVD low-rank approximation for extreme parameter reduction.
 

@@ -35,7 +35,7 @@ base_model:
 - RWKV/rwkv-4-430m-pile
 - RWKV/rwkv-4-1b5-pile
 - RWKV/rwkv-4-7b-pile
-- TRI-ML/openlm-7b-code
+# - TRI-ML/openlm-7b-code
 - EleutherAI/pythia-410m-deduped
 - EleutherAI/pythia-1b-deduped
 - EleutherAI/pythia-1.4b-deduped
@@ -88,7 +88,7 @@ base_model:
 
 - **Developed by:** 🧪🖌️🪄
 - **Model type:** Language model
-- **Language(s) (NLP):** en
+- **Language(s) (NLP):** mul
 - **License:** MIT or Apache 2.0 (your choice)
 - **Parent Model:** Mamba v1, RWKV v4, Pythia, OpenLM
 - **Resources for more information:** More information needed
@@ -112,7 +112,7 @@ base_model:
 <!-- This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
 <!-- If the user enters content, print that. If not, but they enter a task in the list, use that. If neither, say "more info needed." -->
 
-If you're fine-tuning with e.g. LoRA, note that the linear and convolution modules from Mamba, RWKV v4, Pythia, and OpenLM/Supra have already been approximated as low-rank, parameterized hypercomplex submodules (the biggest... well, factor in making DELVE so small).
+If you're fine-tuning with e.g. LoRA, note that the linear modules from Mamba, RWKV v4, Pythia, have already been approximated as low-rank submodules (the biggest... well, factor... in making DELVE so small).
 
 ### Out-of-Scope Use
 

@@ -230,7 +230,7 @@ More information needed
 
 <!-- This section provides another layer of transparency and accountability. Whose views is this model card representing? How many voices were included in its construction? Etc. -->
 
-[@stereoplegic](https://huggingface.co/stereoplegic)
+[🤗 stereoplegic](https://huggingface.co/stereoplegic)
 
 ## Model Card Contact
 

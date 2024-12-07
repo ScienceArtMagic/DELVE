@@ -8,20 +8,15 @@
     "mamba": "mamba-1.4b-hf",
     "rwkv": "RWKV/rwkv-4-1b5-pile",
     "pythia": "EleutherAI/pythia-1.4b-deduped",
-    "pythia-1b": "EleutherAI/pythia-1b-deduped",
-    "openlm": "mlfoundations/open_lm_1B"
+    "pythia-1b": "EleutherAI/pythia-1b-deduped"
   },
   "4x": {
     "mamba": "TRI-ML/mamba-7b-rw",
     "rwkv": "RWKV/rwkv-4-7b-pile",
-    "pythia": "EleutherAI/pythia-6.9b-deduped",
-    "redpajama": "togethercomputer/RedPajama-INCITE-7B-Base",
-    "openlm": "mlfoundations/open_lm_7B_1.25T",
-    "openlm-code": "TRI-ML/openlm-7b-code"
+    "pythia": "EleutherAI/pythia-6.9b-deduped"
   },
   "attn": {
     "128": "EleutherAI/pythia-14m",
-    "256": "EleutherAI/pythia-31m",
-    "512": "EleutherAI/pythia-70m-deduped"
+    "256": "EleutherAI/pythia-31m"
   }
 }

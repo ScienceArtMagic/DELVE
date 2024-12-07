@@ -1,0 +1,23 @@
+{
+  "remove": {
+    "architectures": [
+      "MambaForCausalLM",
+      "RwkvForCausalLM",
+      "GPTNeoXForCausalLM"
+    ],
+    "d_inner": 160,
+    "d_model": 1024,
+    "layer_norm_eps": 1e-05,
+    "n_layer": 48,
+    "rotary_emb_base": 10000,
+    "rotary_pct": 0.25,
+    "max_position_embeddings": 2048
+  },
+  "multiply": [
+    "attention_hidden_size",
+    "hidden_size",
+    "intermediate_size",
+    "intermediate_size_mamba",
+    "time_step_rank"
+  ]
+}

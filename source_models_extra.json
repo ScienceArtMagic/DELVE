@@ -1,0 +1,14 @@
+{
+  "2x": {
+    "openlm": "mlfoundations/open_lm_1B",
+    "dclm": "TRI-ML/DCLM-1B"
+  },
+  "4x": {
+    "redpajama": "togethercomputer/RedPajama-INCITE-7B-Base",
+    "openlm": "mlfoundations/open_lm_7B_1.25T",
+    "openlm-code": "TRI-ML/openlm-7b-code"
+  },
+  "attn": {
+    "512": "EleutherAI/pythia-70m-deduped"
+  }
+}

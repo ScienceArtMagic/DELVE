@@ -35,8 +35,9 @@ base_model:
 - EleutherAI/pythia-410m-deduped
 - EleutherAI/pythia-1b-deduped
 - EleutherAI/pythia-1.4b-deduped
-- EleutherAI/pythia-6.9b-deduped
-# - togethercomputer/RedPajama-INCITE-7B-Base
+- togethercomputer/RedPajama-INCITE-7B-Base
+- EleutherAI/pythia-14m
+- EleutherAI/pythia-31m
 ---
 
 # DELVE: Diminutive Experts Leverage Voluminous Expansion
@@ -230,12 +231,15 @@ More information needed
 
 <!-- This section provides another layer of transparency and accountability. Whose views is this model card representing? How many voices were included in its construction? Etc. -->
 
-[🤗 stereoplegic](https://huggingface.co/stereoplegic)
+[🤗: )))?!?(((](https://huggingface.co/stereoplegic)
 
 ## Model Card Contact
 
-[🤗 stereoplegic](https://huggingface.co/stereoplegic)
-[🦋 ScienceArtMagic](https://ScienceArtMagic.bsky.social)
+[🤗: )))?!?(((](https://huggingface.co/stereoplegic)
+
+[🤗: 🧪🖌️🪄](https://huggingface.co/ScienceArtMagic)
+
+[🦋: 🧪🖌️🪄](https://ScienceArtMagic.bsky.social)
 
 ## How to Get Started with the Model
 

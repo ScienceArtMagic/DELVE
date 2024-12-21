@@ -1,13 +1,17 @@
 import torch
 import torch.nn as nn
 from transformers.activations import ACT2FN
+from shrank import LED
 
 
 class GPTNeoXMLP(nn.Module):
     def __init__(self, config):
         super().__init__()
-        self.dense_h_to_4h = nn.Linear(config.hidden_size, config.intermediate_size)
-        self.dense_4h_to_h = nn.Linear(config.intermediate_size, config.hidden_size)
+        hidden_size = config.hidden_size
+        intermediate_size = config.intermediate_size
+        r = config.r
+        self.dense_h_to_4h = LED(hidden_size, intermediate_size, r)
+        self.dense_4h_to_h = LED(intermediate_size, hidden_size, r)
         self.act = ACT2FN[config.pythia_hidden_act]
 
     def forward(self, hidden_states):
@@ -22,6 +26,7 @@ class RwkvFeedForward(nn.Module):
         super().__init__()
         self.config = config
         self.layer_id = layer_id
+        r = config.r
         hidden_size = config.hidden_size
         intermediate_size = (
             config.intermediate_size
@@ -33,9 +38,9 @@ class RwkvFeedForward(nn.Module):
         self.time_mix_key = nn.Parameter(torch.empty(1, 1, hidden_size))
         self.time_mix_receptance = nn.Parameter(torch.empty(1, 1, hidden_size))
 
-        self.key = nn.Linear(hidden_size, intermediate_size, bias=False)
-        self.receptance = nn.Linear(hidden_size, hidden_size, bias=False)
-        self.value = nn.Linear(intermediate_size, hidden_size, bias=False)
+        self.key = LED(hidden_size, intermediate_size, r, bias=False)
+        self.receptance = LED(hidden_size, hidden_size, r, bias=False)
+        self.value = LED(intermediate_size, hidden_size, r, bias=False)
 
     def forward(self, hidden, state=None):
         if hidden.size(1) == 1 and state is not None:

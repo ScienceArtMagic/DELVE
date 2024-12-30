@@ -35,8 +35,8 @@ base_model:
 - EleutherAI/pythia-410m-deduped
 - EleutherAI/pythia-1b-deduped
 - EleutherAI/pythia-1.4b-deduped
-# - EleutherAI/pythia-6.9b-deduped
-- togethercomputer/RedPajama-INCITE-7B-Base
+- EleutherAI/pythia-6.9b-deduped
+# - togethercomputer/RedPajama-INCITE-7B-Base
 - EleutherAI/pythia-14m
 - EleutherAI/pythia-31m
 ---
